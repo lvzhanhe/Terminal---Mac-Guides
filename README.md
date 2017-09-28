@@ -1,6 +1,6 @@
 # Terminal---Mac-Guides
 
-![terminal](/Users/lyuZhanhe/Desktop/GitHub/Terminal---Mac-Guides/source/terminal.png)
+![terminal](source/terminal.png)
 
 ## 1) Basic Unix Commands
 
