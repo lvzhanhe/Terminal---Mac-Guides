@@ -1,6 +1,6 @@
 # Terminal---Mac-Guides
 
-<img src="source/terminal.png" width = "300" height = "200" alt="Terminal" align=center />
+![terminal](source/terminal.png)
 
 ## 1) Basic Unix Commands
 
