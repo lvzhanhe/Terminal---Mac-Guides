@@ -1,5 +1,7 @@
 # Terminal---Mac-Guides
 
+![terminal](/Users/lyuZhanhe/Desktop/GitHub/Terminal---Mac-Guides/source/terminal.png)
+
 ## 1) Basic Unix Commands
 
 Terminal provides a command line interface to control the UNIX-based operating system. Here’s something important you need to know about Terminal, and what it can do for you.
@@ -144,3 +146,71 @@ README.md  README1.md README2.md
 `mv * ../`: Move all files under the current folder to the parent directory.
 
 `mv [dir1]/* [dir2]`: Move the files in dir1 to dir2.
+
+### cp
+
+`cp [file] [dirname]`: Copy a single file to a target directory. If the file has been existed in the directory, you will be asked to confirm the replacement.
+
+`cp -a [file] [dirname]`: The parameter `-a` 
+
+### touch
+
+`touch [file]`: Create a file.
+
+`touch [file1] [file2]`: Create files.
+
+`touch -t 201211234343.90 [file]`: Create a file and set its timestamp.
+
+```
+➜  ~ touch -t 201211234343.90 log1.log
+➜  ~ ll *.log
+-rw-r--r--  1 lyuZhanhe  staff     0B Nov 24  2012 log1.log
+```
+
+`touch -r [file1] [file2]`: Update the timestemp of file1 to the same as file2.
+
+### cat
+
+It is used to display the content of a file or link several files together or create new one. However, it cannot edit existing files.
+
+`cat [file]`: Display the content of a file. If you specify more than one file name, `cat` will display those files one after the other.
+
+```
+➜  Desktop cat hello.md
+hello world!%
+```
+
+`cat -n [file]`: Number all the output lines .
+
+```
+➜  Desktop cat -n h1.md
+     1	line 1
+     2	line 2
+     3	lin3 3%                                                                 
+```
+
+`cat [file1] > [file2]`: Copy the content in `[file1]` to `[file2]`.
+
+```
+➜  Desktop cat h1.md > h2.md
+```
+
+`cat [file1] >> [file2]`: Append the content in `[file1]` to `[file2]`.
+
+```
+➜  Desktop cat h1.md >> h2.md
+```
+
+An example:
+
+We use `cat` to catenate output text to the file's contents.
+
+```
+➜  Desktop echo "My Classes:" | cat - list.txt
+My Classes:
+math
+biology
+physics
+```
+
+### 
