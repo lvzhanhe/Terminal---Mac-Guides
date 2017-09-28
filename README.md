@@ -213,4 +213,10 @@ biology
 physics
 ```
 
-### 
+### find
+
+`find ~ -name "*.log" -print`: Find all the .log files in the root directory and print the result.
+
+`find . -name "*.log" -print`: Find all the .log files in the current directory and print the result.
+
+`find -atime -[n]`: Find all the files which have been accessed in n days.
