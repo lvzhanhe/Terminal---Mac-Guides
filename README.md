@@ -151,7 +151,7 @@ README.md  README1.md README2.md
 
 `cp [file] [dirname]`: Copy a single file to a target directory. If the file has been existed in the directory, you will be asked to confirm the replacement.
 
-`cp -a [file] [dirname]`: The parameter `-a` 
+`cp -a [file] [dirname]`: The parameter `-a`  and preserve the specified attributes.
 
 ### touch
 
